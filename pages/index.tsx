@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import MetaData from '../components/MetaData'
+import Skills from '../components/Skills'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
           in Google Firebase(GCP) and AWS. I like to play video games and listen
           music.
         </p>
+        <Skills />
       </main>
 
       <footer className={styles.footer}>
