@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
+import HitCounter from '../components/HitsCounter'
 import MetaData from '../components/MetaData'
 import Skills from '../components/Skills'
 
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
+        <HitCounter />
       </footer>
     </div>
   )
