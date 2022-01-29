@@ -1,7 +1,7 @@
 import { skills } from '../../constants'
 import Rating from '../Rating'
 
-export default () => {
+const Skills = () => {
   return (
     <div className="my-8">
       <h3 className="text-gray-100 text-2xl mb-5">Skills</h3>
@@ -16,3 +16,5 @@ export default () => {
     </div>
   )
 }
+
+export default Skills
