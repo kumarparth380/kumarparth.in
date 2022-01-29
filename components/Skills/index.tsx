@@ -1,19 +1,16 @@
-import ReactStars from 'react-stars'
 import { skills } from '../../constants'
-
-export const Rating = ({ value, count = 5 }: any) => (
-  <ReactStars count={count} value={value} color2={'#ffd700'} />
-)
+import Rating from '../Rating'
 
 export default () => {
   return (
-    <div>
+    <div className="my-8">
+      <h3 className="text-gray-100 text-2xl mb-5">Skills</h3>
       {skills.map((skill) => (
-        <div key={skill.name}>
-          <div className="flex flex-row justify-between border-sky-500 cursor-pointer">
-            <p>{skill.name}</p>
-            <Rating value={skill.rating} />
-          </div>
+        <div
+          key={skill.name}
+          className="flex flex-row justify-between p-3 my-4 cursor-pointer shadow-lg shadow-indigo-500/40 border-2 rounded-lg border-gray-500 hover:border-blue-500 transition ease-in-out delay-150 hover:scale-105 duration-500">
+          <p className="text-gray-300 text-lg">{skill.name}</p>
+          <Rating value={skill.rating} />
         </div>
       ))}
     </div>

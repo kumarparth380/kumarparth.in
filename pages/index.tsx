@@ -2,16 +2,15 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import MetaData from '../components/MetaData'
 import Skills from '../components/Skills'
-import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
     <div className="bg-black p-10 pt-20 min-h-screen">
       <MetaData />
 
-      <main className="w-2/3 mx-auto">
+      <main className="container md:w-2/3 mx-auto">
         <h1 className="text-gray-100 text-5xl">Hi, I&apos;m Parth</h1>
-        <p className="text-gray-300 text-lg mt-10 w-2/3">
+        <p className="text-gray-300 text-lg mt-10">
           {' '}
           I am a JavaScript developer with more than 3.2 years of software
           development experience and skills in full-stack development with
@@ -23,13 +22,14 @@ const Home: NextPage = () => {
         <Skills />
       </main>
 
-      <footer className={styles.footer}>
+      <footer className="flex align-center justify-center">
         <a
+          className="text-gray-300 bottom-0"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer">
-          Powered by{' '}
-          <span className={styles.logo}>
+          Made with NextJS and tailwindcss{' '}
+          <span className="">
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
