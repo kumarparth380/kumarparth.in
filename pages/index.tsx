@@ -3,6 +3,7 @@ import Image from 'next/image'
 import HitCounter from '../components/HitsCounter'
 import MetaData from '../components/MetaData'
 import Skills from '../components/Skills'
+import Technologies from '../components/Technologies'
 
 const Home: NextPage = () => {
   return (
@@ -21,18 +22,16 @@ const Home: NextPage = () => {
           music.
         </p>
         <Skills />
+        <Technologies />
       </main>
 
-      <footer className="flex align-center justify-center">
+      <footer className="flex align-center justify-between">
         <a
-          className="text-gray-300 bottom-0"
+          className="text-gray-300 bottom-0 md:mr-10"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer">
           Made with NextJS and tailwindcss{' '}
-          <span className="">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
         </a>
         <HitCounter />
       </footer>
