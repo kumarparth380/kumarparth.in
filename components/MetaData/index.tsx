@@ -27,7 +27,7 @@ const MetaData = () => {
       <meta property="og:site_name" content="Kumar Parth" />
       <meta name="robots" content="index, follow" />
       <title>Kumar Parth</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" type="image/jpg" href="/icon.jpg" />
     </Head>
   )
 }
