@@ -1,0 +1,13 @@
+.chevron-down {
+  fill: #fff;
+  margin: auto;
+  width: 5em;
+  height: 5em;
+  animation: hover-me 0.5s infinite ease-in-out alternate;
+}
+
+@keyframes hover-me {
+  100% {
+    transform: translate3d(0, 25px, 0);
+  }
+}
