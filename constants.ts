@@ -112,3 +112,22 @@ export const technologies = {
     }
   ]
 }
+
+export const contacts = [
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/kumar-parth-a7a78413b'
+  },
+  {
+    name: 'Github',
+    url: 'https://github.com/kumarparth380'
+  },
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/kumarparth15'
+  },
+  {
+    name: 'Email',
+    url: 'mailto:kumarparth380@gmail.com'
+  }
+]
